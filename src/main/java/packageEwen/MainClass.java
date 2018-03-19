@@ -4,22 +4,20 @@ public class MainClass {
 
     public static void main(String[] args){
 
-        Animal animal = new Animal() {
-            public String sayHello() {
-                return "hello";
-            }
-        };
+        Dog dog = new Dog("8");
+        Human human = new Human("25");
 
-        Human human = new Human() {
-            public String sayHello() {
-                return null;
-            }
-        };
+        dog.race = "bull";
+        dog.Nom = "yuki";
+        System.out.println(human.GetAge());
+        System.out.println(dog.GetAge());
+        System.out.println(dog.sayHello());
 
-        Dog dog = new Dog() {
-            public String sayHello() {
-                return null;
-            }
-        };
+        human.Nom = "toto";
+        human.Bipede = true;
+        human.GetAge();
+        System.out.println(human.sayHello());
+
+
     }
 }
